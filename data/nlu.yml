@@ -666,3 +666,11 @@ nlu:
     - en iyi air fryer markaları
     - air fryer alırken nelere dikkat etmeliyim
 
+- intent: pilav_yapimi
+  examples: |
+    - pilav yapımı
+    - canım pilav çekti
+    - pilav olsa da yesek
+    - pilav nasıl yapılır
+    - pilava bayılırım
+    - sevmek eşittir pilav

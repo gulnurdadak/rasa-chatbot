@@ -83,6 +83,7 @@ intents:
   - strange_noise_airfryer
   - airfryer_cleaning_tips
   - choosing_airfryer
+  - pilav_yapimi
 
 responses:
   utter_greet:
@@ -329,6 +330,9 @@ responses:
   utter_choosing_airfryer_tips:
   - text: "Yeni bir air fryer seçerken kapasite, güç, ve özellikler gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
 
+  utter_pilav_yapimi:
+  - text: "önce iki su bardağı pirinci yıka, sonra bir tencerenin içinde tereyağı ile birlikte yıkanmış pirinci kavur. Rengi sarılaşınca 3 bardak soğuk suyu koy ve tuzunu at. Suyunu çekene kadar kısık ateşte pişir. Mis gibi hazır. Afiyet olsun."
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

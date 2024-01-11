@@ -403,3 +403,8 @@ stories:
     steps:
       - intent: choosing_airfryer
       - action: utter_choosing_airfryer_tips
+
+  - story: pilav_yapimi_story
+    steps:
+      - intent: pilav_yapimi
+      - action: utter_pilav_yapimi
