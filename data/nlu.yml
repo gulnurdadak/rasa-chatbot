@@ -3,97 +3,666 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
     - selam
     - merhaba
     - günaydın
-    - slm
-    - selamunaleyküm
+    - iyi günler
+    - naber?
+    - n'aber?
+
 - intent: howu
   examples: |
-    - naber
-    - napıyon
-    - nbr
-    - nasılsın
+    - n'apıyorsun?
+    - nasılsın?
+    - iyi misin?
+    - n'aber?
 
 - intent: goodbye
   examples: |
-    - bye
-    - bays
-    - grsrz
+    - hoşça kal
     - görüşürüz
-    - kib
-    - hadi allaha emanet
-    - kendine cici bak
+    - bays
+    - allaha emanet
+    - kendine iyi bak
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
     - evet
-    - onay
+    - doğru
+    - kesinlikle
+    - elbette
+    - tamam
+    - olabilir
+
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
     - hayır
-    - iptal
+    - asla
+    - pek sanmıyorum
+    - beğenmedim
+    - olmaz
+    - gerçekten değil
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
     - harika hissediyorum
     - mükemmelim
-    - mükoyum
+    - süperim
+    - harika
+    - muhteşem
+    - çok iyi
+    - çok harika
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
     - kötüyüm
-    - hiç sormaa
     - üzgünüm
+    - hiç iyi değilim
+    - mutsuzum
+    - kötü bir gün geçirdim
+    - berbat
+    - çok kötü
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-    - sen bot musun?
-    - kimsin sen?
+    - sen bir bot musun?
+    - insan mısın?
+    - bir botla mı konuşuyorum?
+    - bir insanla mı konuşuyorum?
+
+- intent: internet_is_slow_fixing_internet
+  examples: |
+    - internetim yavaş
+    - ping çok yüksek
+    - web sayfası geç açılıyor
+    - internet hızım düşük
+    - ağım çok yavaş çalışıyor
+    - internet bağlantım kötü
+
+- intent: no_internet_fixing_internet
+  examples: |
+    - internet yok
+    - internet sinyali alamıyorum
+    - web sayfası yüklenmiyor
+    - internetim kesik
+    - bağlantım yok
+    - internet çöktü
+
+- intent: no_wifi_fixing_internet
+  examples: |
+    - wifi bağlantım yok
+    - kablosuz ağa bağlanamıyorum
+    - wifi kapalı
+    - wifi çalışmıyor
+    - wi-fi bağlantısı kesildi
+    - kablosuz ağ sorunu
+
+- intent: need_new_router_fixing_internet
+  examples: |
+    - yeni bir router almalıyım
+    - router değiştirmem lazım
+    - kablosuz router'a ihtiyacım var
+    - daha güçlü bir router almalıyım
+    - cihazlarım bağlanmıyor
+    - daha fazla cihaz bağlayamıyorum
+
+- intent: computer_wont_start
+  examples: |
+    - bilgisayarım çalışmıyor
+    - bilgisayarım açılmıyor
+    - bilgisayar başlamıyor
+    - bilgisayarım çalışmıyor
+    - bilgisayarımı açamıyorum
+
+- intent: slow_computer
+  examples: |
+    - bilgisayarım yavaş
+    - bilgisayarım hızlı çalışmıyor
+    - bilgisayarım çok yavaş
+    - bilgisayar performansı düşük
+    - bilgisayarım geç açılıyor
+
+- intent: software_issue
+  examples: |
+    - yazılım sorunu yaşıyorum
+    - bilgisayarım yazılım hatası veriyor
+    - programlar çalışmıyor
+    - bilgisayarım donuyor
+    - uygulamalar açılmıyor
+
+- intent: hardware_issue
+  examples: |
+    - donanım sorunu yaşıyorum
+    - bilgisayarım donanım hatası veriyor
+    - bilgisayarımın ekranı siyah
+    - bilgisayarım ısınıyor
+    - bilgisayarım aniden kapanıyor
+
+- intent: phone_wont_turn_on
+  examples: |
+    - telefonum çalışmıyor
+    - cep telefonum açılmıyor
+    - telefonum açılmıyor
+    - telefonum çalışmıyor
+    - cep telefonu başlamıyor
+
+- intent: screen_not_working
+  examples: |
+    - telefon ekranım siyah
+    - ekran çalışmıyor
+    - ekran dokunmatiği çalışmıyor
+    - telefon ekranı kararmış
+    - ekran kırık
+
+- intent: battery_issues
+  examples: |
+    - telefonumun pil sorunu var
+    - pil hızlı bitiyor
+    - telefon şarj olmuyor
+    - pil ömrü düşük
+    - şarj soketi sorunu
+
+- intent: software_problems
+  examples: |
+    - yazılım sorunları yaşıyorum
+    - uygulamalar kapanıyor
+    - telefonum yavaş
+    - yazılım hatası veriyor
+    - güncelleme yapamıyorum
+
+- intent: keyboard_not_working
+  examples: |
+    - klavyem çalışmıyor
+    - tuşlar çalışmıyor
+    - klavye tepki vermiyor
+    - klavye bağlantısı yok
+    - klavyem takılı ama çalışmıyor
+
+- intent: mouse_not_working
+  examples: |
+    - fare çalışmıyor
+    - fare hareket etmiyor
+    - mouse tıklama yapmıyor
+    - fare bağlantısı yok
+    - mouse takılı ama çalışmıyor
+
+- intent: laggy_mouse_keyboard
+  examples: |
+    - klavye ve fare gecikmeli
+    - klavye ve fare tepki süresi düşük
+    - mouse ve klavye takılıyor
+    - klavye ve fare donuyor
+    - klavye ve fare yavaş çalışıyor
+
+- intent: wireless_keyboard_mouse_issues
+  examples: |
+    - kablosuz klavye sorunları
+    - kablosuz fare bağlantı sorunları
+    - klavye pil sorunu
+    - fare pil sorunu
+    - kablosuz cihazlar çalışmıyor
+
+- intent: tv_wont_turn_on
+  examples: |
+    - televizyonum açılmıyor
+    - tv çalışmıyor
+    - ekran gelmiyor
+    - televizyonum başlamıyor
+    - tv ekranı siyah
+
+- intent: no_tv_signal
+  examples: |
+    - tv sinyali yok
+    - televizyon kanalları gelmiyor
+    - ekran kararmış
+    - kanallar gelmiyor
+    - no signal hatası
+
+- intent: distorted_picture
+  examples: |
+    - bozuk görüntü
+    - ekran kararmış
+    - renkler karışık
+    - televizyon ekranı titriyor
+    - görüntü kayboluyor
+
+- intent: remote_not_working
+  examples: |
+    - uzaktan kumandam çalışmıyor
+    - tv yanıt vermiyor
+    - kumanda tepki vermiyor
+    - uzaktan kumanda pil sorunu
+    - televizyonu kontrol edemiyorum
+
+- intent: heating_device_not_working
+  examples: |
+    - ısıtıcı çalışmıyor
+    - ısıtıcı açılmıyor
+    - ısıtıcı çalışmıyor
+    - ısıtıcı güç almıyor
+    - ısıtıcı yanmıyor
+
+- intent: temperature_issue
+  examples: |
+    - ısıtıcı sıcaklık ayarını almıyor
+    - ısıtıcı sıcaklık kontrol sorunu
+    - ısıtıcı çok sıcak
+    - ısıtıcı çok soğuk
+    - ısıtıcı sıcaklık değiştirmiyor
+
+- intent: strange_noise_heater
+  examples: |
+    - ısıtıcıda garip ses
+    - ısıtıcı tıkırtı yapıyor
+    - ısıtıcıda anormal ses
+    - ısıtıcı vızıltı yapıyor
+    - ısıtıcıda gürültü var
+
+- intent: safety_concerns_heater
+  examples: |
+    - ısıtıcı çok sıcak
+    - ısıtıcı aşırı ısınıyor
+    - ısıtıcı kokuyor
+    - ısıtıcı duman yapıyor
+    - ısıtıcı güvenli değil gibi
+
+- intent: choosing_heater
+  examples: |
+    - yeni ısıtıcı seçimi
+    - hangi ısıtıcıyı seçmeliyim
+    - ısıtıcı önerisi
+    - en iyi ısıtıcı markaları
+    - ısıtıcı alırken nelere dikkat etmeliyim
+
+- intent: ac_not_turning_on
+  examples: |
+    - klima açılmıyor
+    - klimam çalışmıyor
+    - klima açılmıyor
+    - klima güç almıyor
+    - klima başlamıyor
+
+- intent: insufficient_cooling
+  examples: |
+    - klima yeterince soğutmuyor
+    - klima istenilen sıcaklığı sağlamıyor
+    - klima zayıf soğutuyor
+    - klima sıcak hava üflüyor
+    - klima etkisiz
+
+- intent: strange_noise_ac
+  examples: |
+    - klimada garip ses
+    - klima tıkırtı yapıyor
+    - klimada anormal ses
+    - klima vızıltı yapıyor
+    - klimada gürültü var
+
+- intent: ac_leaking_water
+  examples: |
+    - klima su sızdırıyor
+    - klima su damlatıyor
+    - klima su birikintisi oluşturuyor
+    - klima su atıyor
+    - klima su döküyor
+
+- intent: choosing_ac
+  examples: |
+    - yeni klima seçimi
+    - hangi klimayı seçmeliyim
+    - klima önerisi
+    - en iyi klima markaları
+    - klima alırken nelere dikkat etmeliyim
+
+- intent: fridge_not_cooling
+  examples: |
+    - buzdolabı soğutmuyor
+    - buzdolabım ısınıyor
+    - buzdolabı soğutma yapmıyor
+    - buzdolabı soğuk değil
+    - buzdolabı ısınmış
+
+- intent: freezer_issue
+  examples: |
+    - dondurucu çalışmıyor
+    - dondurucu buz yapmıyor
+    - dondurucu soğutmuyor
+    - dondurucu buzlu
+    - dondurucu sıcak
+
+- intent: strange_noise_fridge
+  examples: |
+    - buzdolabında garip ses
+    - buzdolabı tıkırtı yapıyor
+    - buzdolabında anormal ses
+    - buzdolabı vızıltı yapıyor
+    - buzdolabında gürültü var
+
+- intent: water_leak_fridge
+  examples: |
+    - buzdolabından su sızıyor
+    - buzdolabı su damlatıyor
+    - buzdolabı su birikintisi oluşturuyor
+    - buzdolabı su atıyor
+    - buzdolabı su döküyor
+
+- intent: choosing_fridge
+  examples: |
+    - yeni buzdolabı seçimi
+    - hangi buzdolabını seçmeliyim
+    - buzdolabı önerisi
+    - en iyi buzdolabı markaları
+    - buzdolabı alırken nelere dikkat etmeliyim
+
+- intent: stove_not_turning_on
+  examples: |
+    - ocak açılmıyor
+    - ocağım çalışmıyor
+    - ocak başlamıyor
+    - ocağımı açamıyorum
+    - ocak çalışmıyor
+
+- intent: uneven_flame
+  examples: |
+    - ocakta düzensiz alev
+    - alev eşit değil
+    - ocak yanıyor ama düzensiz
+    - ocağın alevi düzensiz
+    - alev istenilen gibi değil
+
+- intent: gas_smell_stove
+  examples: |
+    - ocakta gaz kokusu
+    - ocağım gaz kokuyor
+    - ocakta yanık koku
+    - ocağım yanık kokuyor
+    - gaz sızıntısı
+
+- intent: stove_cleaning_tips
+  examples: |
+    - ocak temizleme ipuçları
+    - ocak nasıl temizlenir
+    - ocağı temizleme yöntemleri
+    - ocak temizleme ürünleri
+    - ocak bakımı
+
+- intent: choosing_stove
+  examples: |
+    - yeni ocak seçimi
+    - hangi ocak modelini seçmeliyim
+    - ocak önerisi
+    - en iyi ocak markaları
+    - ocak alırken nelere dikkat etmeliyim
+
+- intent: hood_not_working
+  examples: |
+    - davlumbaz çalışmıyor
+    - davlumbaz açılmıyor
+    - davlumbaz ses yapmıyor
+    - davlumbaz güç alamıyor
+    - davlumbaz başlamıyor
+
+- intent: noisy_hood
+  examples: |
+    - davlumbazda gürültü var
+    - davlumbaz sesli çalışıyor
+    - davlumbazda anormal ses
+    - davlumbaz vızıltı yapıyor
+    - davlumbazda tıkırtı var
+
+- intent: hood_cleaning_tips
+  examples: |
+    - davlumbaz temizleme ipuçları
+    - davlumbaz nasıl temizlenir
+    - davlumbaz bakımı
+    - davlumbaz yağlı
+    - davlumbaz filtresi temizleme
+
+- intent: choosing_hood
+  examples: |
+    - yeni davlumbaz seçimi
+    - hangi davlumbazı seçmeliyim
+    - davlumbaz önerisi
+    - en iyi davlumbaz markaları
+    - davlumbaz alırken nelere dikkat etmeliyim
+
+- intent: oven_not_heating
+  examples: |
+    - fırın ısınmıyor
+    - fırın açılmıyor
+    - fırın ısınmıyor
+    - fırın ısıtmıyor
+    - fırın sıcak olmuyor
+
+- intent: uneven_baking
+  examples: |
+    - fırında eşit pişmiyor
+    - fırında eşit pişirme sorunu
+    - fırında bir taraf daha sıcak
+    - fırın yeterince pişirmiyor
+    - fırında eşit ısı dağılımı yok
+
+- intent: burnt_food_oven
+  examples: |
+    - fırında yanık koku var
+    - fırın yanık koku yapıyor
+    - fırında yanmış yemek kokusu
+    - fırın içinde duman var
+    - fırında yanık iz var
+
+- intent: oven_cleaning_tips
+  examples: |
+    - fırın temizleme ipuçları
+    - fırın nasıl temizlenir
+    - fırın içi temizleme yöntemleri
+    - fırın temizleme ürünleri
+    - fırın içi lekeleri nasıl çıkarılır
+
+- intent: choosing_oven
+  examples: |
+    - yeni fırın seçimi
+    - hangi fırını seçmeliyim
+    - fırın önerisi
+    - en iyi fırın markaları
+    - fırın alırken nelere dikkat etmeliyim
+
+- intent: dishwasher_not_starting
+  examples: |
+    - bulaşık makinesi çalışmıyor
+    - bulaşık makinesi başlamıyor
+    - bulaşık makinesi açılmıyor
+    - bulaşık makinesi başlamıyor
+    - bulaşık makinesi çalışmıyor
+
+- intent: dirty_dishes_dishwasher
+  examples: |
+    - bulaşık makinesi bulaşıkları temizlemiyor
+    - bulaşık makinesi bulaşıkları yeterince temizlemiyor
+    - bulaşık makinesi bulaşıkları kirliden temizlemiyor
+    - bulaşık makinesi bulaşıkları kirliden çıkıyor
+    - bulaşık makinesi bulaşıkları tam temizlemiyor
+
+- intent: water_leakage_dishwasher
+  examples: |
+    - bulaşık makinesi su sızdırıyor
+    - bulaşık makinesi altından su geliyor
+    - bulaşık makinesi altında su birikiyor
+    - bulaşık makinesi su döküyor
+    - bulaşık makinesi su sızdırıyor
+
+- intent: dishwasher_cleaning_tips
+  examples: |
+    - bulaşık makinesi temizleme ipuçları
+    - bulaşık makinesi içini temizleme yöntemleri
+    - bulaşık makinesi temizlik ürünleri
+    - bulaşık makinesi kokuyor
+    - bulaşık makinesi içi lekeleri nasıl çıkarılır
+
+- intent: choosing_dishwasher
+  examples: |
+    - yeni bulaşık makinesi seçimi
+    - hangi bulaşık makinesini seçmeliyim
+    - bulaşık makinesi önerisi
+    - en iyi bulaşık makinesi markaları
+    - bulaşık makinesi alırken nelere dikkat etmeliyim
+
+- intent: washing_machine_not_starting
+  examples: |
+    - çamaşır makinesi çalışmıyor
+    - çamaşır makinesi başlamıyor
+    - çamaşır makinesi açılmıyor
+    - çamaşır makinesi başlamıyor
+    - çamaşır makinesi çalışmıyor
+
+- intent: not_draining_water_washing_machine
+  examples: |
+    - çamaşır makinesi su boşaltmıyor
+    - çamaşır makinesi suyu boşaltmıyor
+    - çamaşır makinesi su bırakmıyor
+    - çamaşır makinesi su boşaltma sorunu
+    - çamaşır makinesi suyu atamıyor
+
+- intent: shaking_vibrating_washing_machine
+  examples: |
+    - çamaşır makinesi sallanıyor
+    - çamaşır makinesi titriyor
+    - çamaşır makinesi normalden daha fazla titriyor
+    - çamaşır makinesi sarsılıyor
+    - çamaşır makinesi yerinden oynuyor
+
+- intent: washing_machine_cleaning_tips
+  examples: |
+    - çamaşır makinesi temizleme ipuçları
+    - çamaşır makinesi içini temizleme yöntemleri
+    - çamaşır makinesi temizlik ürünleri
+    - çamaşır makinesi kokuyor
+    - çamaşır makinesi içi lekeleri nasıl çıkarılır
+
+- intent: choosing_washing_machine
+  examples: |
+    - yeni çamaşır makinesi seçimi
+    - hangi çamaşır makinesini seçmeliyim
+    - çamaşır makinesi önerisi
+    - en iyi çamaşır makinesi markaları
+    - çamaşır makinesi alırken nelere dikkat etmeliyim
+
+- intent: dryer_not_starting
+  examples: |
+    - kurutma makinesi çalışmıyor
+    - kurutma makinesi başlamıyor
+    - kurutma makinesi açılmıyor
+    - kurutma makinesi başlamıyor
+    - kurutma makinesi çalışmıyor
+
+- intent: not_drying_clothes_dryer
+  examples: |
+    - kurutma makinesi kıyafetleri kurutmuyor
+    - kurutma makinesi kıyafetleri yeterince kurutmuyor
+    - kurutma makinesi kıyafetleri ıslak bırakıyor
+    - kurutma makinesi kıyafetleri tam kurutamıyor
+    - kurutma makinesi kıyafetleri nemli bırakıyor
+
+- intent: overheating_dryer
+  examples: |
+    - kurutma makinesi aşırı ısınıyor
+    - kurutma makinesi çok sıcak
+    - kurutma makinesi normalden daha fazla ısınıyor
+    - kurutma makinesi sıcaklığı yüksek
+    - kurutma makinesi çok sıcak hava üfliyor
+
+- intent: dryer_cleaning_tips
+  examples: |
+    - kurutma makinesi temizleme ipuçları
+    - kurutma makinesi içini temizleme yöntemleri
+    - kurutma makinesi temizlik ürünleri
+    - kurutma makinesi kokuyor
+    - kurutma makinesi içi lekeleri nasıl çıkarılır
+
+- intent: choosing_dryer
+  examples: |
+    - yeni kurutma makinesi seçimi
+    - hangi kurutma makinesini seçmeliyim
+    - kurutma makinesi önerisi
+    - en iyi kurutma makinesi markaları
+    - kurutma makinesi alırken nelere dikkat etmeliyim
+
+- intent: microwave_not_working
+  examples: |
+    - mikrodalga fırın çalışmıyor
+    - mikrodalga fırın başlamıyor
+    - mikrodalga fırın açılmıyor
+    - mikrodalga fırın çalışmıyor
+    - mikrodalga fırın güç alamıyor
+
+- intent: uneven_cooking_microwave
+  examples: |
+    - mikrodalga fırın eşit pişirmiyor
+    - mikrodalga fırın bir tarafı daha sıcak
+    - mikrodalga fırın yeterince pişirmiyor
+    - mikrodalga fırın içi eşit ısınmıyor
+    - mikrodalga fırın homojen pişirme yapmıyor
+
+- intent: strange_noise_microwave
+  examples: |
+    - mikrodalga fırında garip ses var
+    - mikrodalga fırın sesli çalışıyor
+    - mikrodalga fırında anormal ses
+    - mikrodalga fırın vızıltı yapıyor
+    - mikrodalga fırın tıkırtı sesi çıkarıyor
+
+- intent: microwave_cleaning_tips
+  examples: |
+    - mikrodalga fırın temizleme ipuçları
+    - mikrodalga fırın içini temizleme yöntemleri
+    - mikrodalga fırın temizlik ürünleri
+    - mikrodalga fırın kokuyor
+    - mikrodalga fırın içi lekeleri nasıl çıkarılır
+
+- intent: choosing_microwave
+  examples: |
+    - yeni mikrodalga fırın seçimi
+    - hangi mikrodalga fırını seçmeliyim
+    - mikrodalga fırın önerisi
+    - en iyi mikrodalga fırın markaları
+    - mikrodalga fırın alırken nelere dikkat etmeliyim
+
+- intent: airfryer_not_powering_on
+  examples: |
+    - air fryer çalışmıyor
+    - air fryer başlamıyor
+    - air fryer açılmıyor
+    - air fryer güç alamıyor
+    - air fryer başlatılamıyor
+
+- intent: uneven_cooking_airfryer
+  examples: |
+    - air fryer eşit pişirmiyor
+    - air fryer bir tarafı daha sıcak
+    - air fryer yeterince pişirmiyor
+    - air fryer içi eşit ısınmıyor
+    - air fryer homojen pişirme yapmıyor
+
+- intent: strange_noise_airfryer
+  examples: |
+    - air fryer'da garip ses var
+    - air fryer sesli çalışıyor
+    - air fryer'da anormal ses
+    - air fryer vızıltı yapıyor
+    - air fryer tıkırtı sesi çıkarıyor
+
+- intent: airfryer_cleaning_tips
+  examples: |
+    - air fryer temizleme ipuçları
+    - air fryer içini temizleme yöntemleri
+    - air fryer temizlik ürünleri
+    - air fryer kokuyor
+    - air fryer içi lekeleri nasıl çıkarılır
+
+- intent: choosing_airfryer
+  examples: |
+    - yeni air fryer seçimi
+    - hangi air fryer'ı seçmeliyim
+    - air fryer önerisi
+    - en iyi air fryer markaları
+    - air fryer alırken nelere dikkat etmeliyim
+

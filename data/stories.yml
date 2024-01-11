@@ -1,37 +1,405 @@
 version: "3.1"
 
 stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: howu
+    steps:
+      - intent: howu
+      - action: utter_howu
+      - intent: mood_great
+      - action: utter_happy
 
-- story: howu
-  steps:
-  - intent: howu
-  - action: utter_howu
-  - intent: mood_great
-  - action: utter_happy
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: internet_is_slow_story
+    steps:
+      - intent: internet_is_slow_fixing_internet
+      - action: utter_slow_internet_fix
+
+  - story: no_internet_story
+    steps:
+      - intent: no_internet_fixing_internet
+      - action: utter_no_internet_fix
+
+  - story: no_wifi_story
+    steps:
+      - intent: no_wifi_fixing_internet
+      - action: utter_no_wifi_fix
+
+  - story: need_new_router_story
+    steps:
+      - intent: need_new_router_fixing_internet
+      - action: utter_need_new_router_fix
+
+  - story: computer_wont_start_story
+    steps:
+      - intent: computer_wont_start
+      - action: utter_computer_wont_start_fix
+
+  - story: slow_computer_story
+    steps:
+      - intent: slow_computer
+      - action: utter_slow_computer_fix
+
+  - story: software_issue_story
+    steps:
+      - intent: software_issue
+      - action: utter_software_issue_fix
+
+  - story: hardware_issue_story
+    steps:
+      - intent: hardware_issue
+      - action: utter_hardware_issue_fix
+
+  - story: phone_wont_turn_on_story
+    steps:
+      - intent: phone_wont_turn_on
+      - action: utter_phone_wont_turn_on_fix
+
+  - story: screen_not_working_story
+    steps:
+      - intent: screen_not_working
+      - action: utter_screen_not_working_fix
+
+  - story: battery_issues_story
+    steps:
+      - intent: battery_issues
+      - action: utter_battery_issues_fix
+
+  - story: software_problems_story
+    steps:
+      - intent: software_problems
+      - action: utter_software_problems_fix
+  - story: keyboard_not_working_story
+    steps:
+      - intent: keyboard_not_working
+      - action: utter_keyboard_not_working_fix
+
+  - story: mouse_not_working_story
+    steps:
+      - intent: mouse_not_working
+      - action: utter_mouse_not_working_fix
+
+  - story: laggy_mouse_keyboard_story
+    steps:
+      - intent: laggy_mouse_keyboard
+      - action: utter_laggy_mouse_keyboard_fix
+
+  - story: wireless_keyboard_mouse_issues_story
+    steps:
+      - intent: wireless_keyboard_mouse_issues
+      - action: utter_wireless_keyboard_mouse_issues_fix
+    
+  - story: tv_wont_turn_on_story
+    steps:
+      - intent: tv_wont_turn_on
+      - action: utter_tv_wont_turn_on_fix
+
+  - story: no_tv_signal_story
+    steps:
+      - intent: no_tv_signal
+      - action: utter_no_tv_signal_fix
+
+  - story: distorted_picture_story
+    steps:
+      - intent: distorted_picture
+      - action: utter_distorted_picture_fix
+
+  - story: remote_not_working_story
+    steps:
+      - intent: remote_not_working
+      - action: utter_remote_not_working_fix
+
+  - story: heating_device_not_working_story
+    steps:
+      - intent: heating_device_not_working
+      - action: utter_heating_device_not_working_fix
+
+  - story: temperature_issue_story
+    steps:
+      - intent: temperature_issue
+      - action: utter_temperature_issue_fix
+
+  - story: strange_noise_heater_story
+    steps:
+      - intent: strange_noise_heater
+      - action: utter_strange_noise_heater_fix
+
+  - story: safety_concerns_heater_story
+    steps:
+      - intent: safety_concerns_heater
+      - action: utter_safety_concerns_heater_fix
+
+  - story: choosing_heater_story
+    steps:
+      - intent: choosing_heater
+      - action: utter_choosing_heater_tips
+
+  - story: ac_not_turning_on_story
+    steps:
+      - intent: ac_not_turning_on
+      - action: utter_ac_not_turning_on_fix
+
+  - story: insufficient_cooling_story
+    steps:
+      - intent: insufficient_cooling
+      - action: utter_insufficient_cooling_fix
+
+  - story: strange_noise_ac_story
+    steps:
+      - intent: strange_noise_ac
+      - action: utter_strange_noise_ac_fix
+
+  - story: ac_leaking_water_story
+    steps:
+      - intent: ac_leaking_water
+      - action: utter_ac_leaking_water_fix
+
+  - story: choosing_ac_story
+    steps:
+      - intent: choosing_ac
+      - action: utter_choosing_ac_tips
+
+  - story: fridge_not_cooling_story
+    steps:
+      - intent: fridge_not_cooling
+      - action: utter_fridge_not_cooling_fix
+
+  - story: freezer_issue_story
+    steps:
+      - intent: freezer_issue
+      - action: utter_freezer_issue_fix
+
+  - story: strange_noise_fridge_story
+    steps:
+      - intent: strange_noise_fridge
+      - action: utter_strange_noise_fridge_fix
+
+  - story: water_leak_fridge_story
+    steps:
+      - intent: water_leak_fridge
+      - action: utter_water_leak_fridge_fix
+
+  - story: choosing_fridge_story
+    steps:
+      - intent: choosing_fridge
+      - action: utter_choosing_fridge_tips
+
+  - story: stove_not_turning_on_story
+    steps:
+      - intent: stove_not_turning_on
+      - action: utter_stove_not_turning_on_fix
+
+  - story: uneven_flame_story
+    steps:
+      - intent: uneven_flame
+      - action: utter_uneven_flame_fix
+
+  - story: gas_smell_stove_story
+    steps:
+      - intent: gas_smell_stove
+      - action: utter_gas_smell_stove_fix
+
+  - story: stove_cleaning_tips_story
+    steps:
+      - intent: stove_cleaning_tips
+      - action: utter_stove_cleaning_tips
+
+  - story: choosing_stove_story
+    steps:
+      - intent: choosing_stove
+      - action: utter_choosing_stove_tips
+
+  - story: hood_not_working_story
+    steps:
+      - intent: hood_not_working
+      - action: utter_hood_not_working_fix
+
+  - story: noisy_hood_story
+    steps:
+      - intent: noisy_hood
+      - action: utter_noisy_hood_fix
+
+  - story: hood_cleaning_tips_story
+    steps:
+      - intent: hood_cleaning_tips
+      - action: utter_hood_cleaning_tips
+
+  - story: choosing_hood_story
+    steps:
+      - intent: choosing_hood
+      - action: utter_choosing_hood_tips
+
+  - story: oven_not_heating_story
+    steps:
+      - intent: oven_not_heating
+      - action: utter_oven_not_heating_fix
+
+  - story: uneven_baking_story
+    steps:
+      - intent: uneven_baking
+      - action: utter_uneven_baking_fix
+
+  - story: burnt_food_oven_story
+    steps:
+      - intent: burnt_food_oven
+      - action: utter_burnt_food_oven_fix
+
+  - story: oven_cleaning_tips_story
+    steps:
+      - intent: oven_cleaning_tips
+      - action: utter_oven_cleaning_tips
+
+  - story: choosing_oven_story
+    steps:
+      - intent: choosing_oven
+      - action: utter_choosing_oven_tips
+
+  - story: dishwasher_not_starting_story
+    steps:
+      - intent: dishwasher_not_starting
+      - action: utter_dishwasher_not_starting_fix
+
+  - story: dirty_dishes_dishwasher_story
+    steps:
+      - intent: dirty_dishes_dishwasher
+      - action: utter_dirty_dishes_dishwasher_fix
+
+  - story: water_leakage_dishwasher_story
+    steps:
+      - intent: water_leakage_dishwasher
+      - action: utter_water_leakage_dishwasher_fix
+
+  - story: dishwasher_cleaning_tips_story
+    steps:
+      - intent: dishwasher_cleaning_tips
+      - action: utter_dishwasher_cleaning_tips
+
+  - story: choosing_dishwasher_story
+    steps:
+      - intent: choosing_dishwasher
+      - action: utter_choosing_dishwasher_tips
+
+  - story: washing_machine_not_starting_story
+    steps:
+      - intent: washing_machine_not_starting
+      - action: utter_washing_machine_not_starting_fix
+
+  - story: not_draining_water_washing_machine_story
+    steps:
+      - intent: not_draining_water_washing_machine
+      - action: utter_not_draining_water_washing_machine_fix
+
+  - story: shaking_vibrating_washing_machine_story
+    steps:
+      - intent: shaking_vibrating_washing_machine
+      - action: utter_shaking_vibrating_washing_machine_fix
+
+  - story: washing_machine_cleaning_tips_story
+    steps:
+      - intent: washing_machine_cleaning_tips
+      - action: utter_washing_machine_cleaning_tips
+
+  - story: choosing_washing_machine_story
+    steps:
+      - intent: choosing_washing_machine
+      - action: utter_choosing_washing_machine_tips
+
+  - story: dryer_not_starting_story
+    steps:
+      - intent: dryer_not_starting
+      - action: utter_dryer_not_starting_fix
+
+  - story: not_drying_clothes_dryer_story
+    steps:
+      - intent: not_drying_clothes_dryer
+      - action: utter_not_drying_clothes_dryer_fix
+
+  - story: overheating_dryer_story
+    steps:
+      - intent: overheating_dryer
+      - action: utter_overheating_dryer_fix
+
+  - story: dryer_cleaning_tips_story
+    steps:
+      - intent: dryer_cleaning_tips
+      - action: utter_dryer_cleaning_tips
+
+  - story: choosing_dryer_story
+    steps:
+      - intent: choosing_dryer
+      - action: utter_choosing_dryer_tips
+
+  - story: microwave_not_working_story
+    steps:
+      - intent: microwave_not_working
+      - action: utter_microwave_not_working_fix
+
+  - story: uneven_cooking_microwave_story
+    steps:
+      - intent: uneven_cooking_microwave
+      - action: utter_uneven_cooking_microwave_fix
+
+  - story: strange_noise_microwave_story
+    steps:
+      - intent: strange_noise_microwave
+      - action: utter_strange_noise_microwave_fix
+
+  - story: microwave_cleaning_tips_story
+    steps:
+      - intent: microwave_cleaning_tips
+      - action: utter_microwave_cleaning_tips
+
+  - story: choosing_microwave_story
+    steps:
+      - intent: choosing_microwave
+      - action: utter_choosing_microwave_tips
+
+  - story: airfryer_not_powering_on_story
+    steps:
+      - intent: airfryer_not_powering_on
+      - action: utter_airfryer_not_powering_on_fix
+
+  - story: uneven_cooking_airfryer_story
+    steps:
+      - intent: uneven_cooking_airfryer
+      - action: utter_uneven_cooking_airfryer_fix
+
+  - story: strange_noise_airfryer_story
+    steps:
+      - intent: strange_noise_airfryer
+      - action: utter_strange_noise_airfryer_fix
+
+  - story: airfryer_cleaning_tips_story
+    steps:
+      - intent: airfryer_cleaning_tips
+      - action: utter_airfryer_cleaning_tips
+
+  - story: choosing_airfryer_story
+    steps:
+      - intent: choosing_airfryer
+      - action: utter_choosing_airfryer_tips

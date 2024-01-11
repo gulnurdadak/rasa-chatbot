@@ -9,6 +9,80 @@ intents:
   - mood_unhappy
   - bot_challenge
   - goodbye
+  - internet_is_slow_fixing_internet
+  - no_internet_fixing_internet
+  - no_wifi_fixing_internet
+  - need_new_router_fixing_internet
+  - computer_wont_start
+  - slow_computer
+  - software_issue
+  - hardware_issue
+  - phone_wont_turn_on
+  - screen_not_working
+  - battery_issues
+  - software_problems
+  - keyboard_not_working
+  - mouse_not_working
+  - laggy_mouse_keyboard
+  - wireless_keyboard_mouse_issues
+  - tv_wont_turn_on
+  - no_tv_signal
+  - distorted_picture
+  - remote_not_working
+  - heating_device_not_working
+  - temperature_issue
+  - strange_noise_heater
+  - safety_concerns_heater
+  - choosing_heater
+  - ac_not_turning_on
+  - insufficient_cooling
+  - strange_noise_ac
+  - ac_leaking_water
+  - choosing_ac
+  - fridge_not_cooling
+  - freezer_issue
+  - strange_noise_fridge
+  - water_leak_fridge
+  - choosing_fridge
+  - stove_not_turning_on
+  - uneven_flame
+  - gas_smell_stove
+  - stove_cleaning_tips
+  - choosing_stove
+  - hood_not_working
+  - noisy_hood
+  - hood_cleaning_tips
+  - choosing_hood
+  - oven_not_heating
+  - uneven_baking
+  - burnt_food_oven
+  - oven_cleaning_tips
+  - choosing_oven
+  - dishwasher_not_starting
+  - dirty_dishes_dishwasher
+  - water_leakage_dishwasher
+  - dishwasher_cleaning_tips
+  - choosing_dishwasher
+  - washing_machine_not_starting
+  - not_draining_water_washing_machine
+  - shaking_vibrating_washing_machine
+  - washing_machine_cleaning_tips
+  - choosing_washing_machine
+  - dryer_not_starting
+  - not_drying_clothes_dryer
+  - overheating_dryer
+  - dryer_cleaning_tips
+  - choosing_dryer
+  - microwave_not_working
+  - uneven_cooking_microwave
+  - strange_noise_microwave
+  - microwave_cleaning_tips
+  - choosing_microwave
+  - airfryer_not_powering_on
+  - uneven_cooking_airfryer
+  - strange_noise_airfryer
+  - airfryer_cleaning_tips
+  - choosing_airfryer
 
 responses:
   utter_greet:
@@ -32,6 +106,228 @@ responses:
 
   utter_howu:
   - text: "Teşekkürler seni gördüğüm için çok mutluyum sen nasılsın?"
+
+  utter_slow_internet_fix:
+  - text: "Eğer internetiniz yavaşsa, modeminizi yeniden başlatmayı deneyebilirsiniz. Ayrıca, internet servis sağlayıcınızla iletişime geçebilirsiniz."
+
+  utter_no_internet_fix:
+  - text: "Eğer internetiniz yoksa, öncelikle modem ve router bağlantılarını kontrol edin. Ayrıca, internet servis sağlayıcınızı arayarak sorunu bildirebilirsiniz."
+
+  utter_no_wifi_fix:
+  - text: "Eğer wifi bağlantınız yoksa, wifi sinyalinin açık olduğundan ve doğru ağı seçtiğinizden emin olun. Modem ve router'ı kontrol ederek sorunu çözebilirsiniz."
+
+  utter_need_new_router_fix:
+  - text: "Eğer yeni bir router'a ihtiyacınız varsa, daha güçlü bir model almayı düşünebilirsiniz. Mağazalarda farklı modelleri inceleyerek size uygun olanı seçebilirsiniz."
+
+  utter_computer_wont_start_fix:
+  - text: "Bilgisayarınız açılmıyorsa, önce güç kaynağını kontrol edin ve sonra bilgisayarınızı yeniden başlatmayı deneyin."
+
+  utter_slow_computer_fix:
+  - text: "Bilgisayarınız yavaşsa, gereksiz dosyaları temizleyerek ve arka planda çalışan uygulamaları kontrol ederek performansı artırabilirsiniz."
+
+  utter_software_issue_fix:
+  - text: "Yazılım sorunu yaşıyorsanız, ilgili programları güncelleyerek veya bilgisayarınızı virüs taramasından geçirerek sorunu çözebilirsiniz."
+
+  utter_hardware_issue_fix:
+  - text: "Donanım sorunu yaşıyorsanız, bilgisayarınızdaki bağlantıları kontrol edin veya bir teknik servisten yardım alın."
+  
+  utter_phone_wont_turn_on_fix:
+  - text: "Telefonunuz açılmıyorsa, önce pil durumunu kontrol edin ve ardından telefonunuzu yeniden başlatmayı deneyin."
+
+  utter_screen_not_working_fix:
+  - text: "Eğer ekran çalışmıyorsa, telefonunuzu yeniden başlatmayı deneyin. Eğer sorun devam ederse, teknik servisten yardım almanızı öneririm."
+
+  utter_battery_issues_fix:
+  - text: "Pil sorunları yaşıyorsanız, şarj kablosunu ve adaptörü kontrol edin. Pil ömrünü artırmak için arka planda çalışan uygulamaları azaltabilirsiniz."
+
+  utter_software_problems_fix:
+  - text: "Yazılım sorunları için, telefonunuzu güncelleyerek veya gereksiz uygulamaları kaldırarak sorunu çözebilirsiniz."
+
+  utter_keyboard_not_working_fix:
+  - text: "Eğer klavyeniz çalışmıyorsa, bağlantı noktalarını kontrol edin ve gerekirse USB portunu değiştirin. Ayrıca, sürücü güncellemelerini kontrol edin."
+
+  utter_mouse_not_working_fix:
+  - text: "Eğer fare çalışmıyorsa, bağlantı noktalarını kontrol edin, gerekirse USB portunu değiştirin ve sürücü güncellemelerini kontrol edin."
+
+  utter_laggy_mouse_keyboard_fix:
+  - text: "Eğer klavye ve fare gecikmeli çalışıyorsa, bilgisayarınızdaki arka planda çalışan uygulamaları kontrol edin. Ayrıca, sürücü güncellemelerini yapabilirsiniz."
+
+  utter_wireless_keyboard_mouse_issues_fix:
+  - text: "Kablosuz klavye ve fare sorunları yaşıyorsanız, pil durumunu kontrol edin, bağlantıyı sıfırlayın ve gerekirse sürücü güncellemelerini yapın."
+
+  utter_tv_wont_turn_on_fix:
+  - text: "Televizyonunuz açılmıyorsa, önce güç kaynağını kontrol edin ve ardından televizyonunuzu yeniden başlatmayı deneyin."
+
+  utter_no_tv_signal_fix:
+  - text: "Eğer tv sinyali yoksa, anten bağlantısını kontrol edin ve televizyonunuzun doğru kanalda olduğundan emin olun."
+
+  utter_distorted_picture_fix:
+  - text: "Eğer görüntü bozuksa, kablo bağlantılarını kontrol edin ve televizyonunuzun sinyal kaynağını doğru seçtiğinden emin olun."
+
+  utter_remote_not_working_fix:
+  - text: "Uzaktan kumandanız çalışmıyorsa, pil durumunu kontrol edin, uzaktan kumanda ile televizyon arasındaki engelleri kaldırın ve televizyonunuzun uzaktan kumandayı algılayabildiğinden emin olun."
+
+  utter_heating_device_not_working_fix:
+  - text: "Eğer ısıtıcınız çalışmıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_temperature_issue_fix:
+  - text: "Isıtıcınız sıcaklık kontrol sorunu yaşıyorsa, kullanım kılavuzunu kontrol ederek doğru sıcaklık ayarlarını yapın. Sorun devam ederse teknik destek alabilirsiniz."
+
+  utter_strange_noise_heater_fix:
+  - text: "Eğer ısıtıcınızda anormal sesler duyuyorsanız, cihazı kapatın ve hemen teknik servise başvurun. Bu tür sesler güvenlik riski oluşturabilir."
+
+  utter_safety_concerns_heater_fix:
+  - text: "Eğer ısıtıcınız aşırı ısınıyorsa, koku veya duman geliyorsa, cihazı kapatın ve derhal kullanmaktan vazgeçin. Güvenlik açısından teknik destek almanız önemlidir."
+
+  utter_choosing_heater_tips:
+  - text: "Yeni bir ısıtıcı seçerken enerji verimliliği, ısıtma kapasitesi ve güvenlik özellikleri gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_ac_not_turning_on_fix:
+  - text: "Eğer klimanız açılmıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_insufficient_cooling_fix:
+  - text: "Klimanız yeterince soğutmuyorsa, filtreleri kontrol edin ve gerekirse temizleyin. Ayrıca, sıcaklık ayarlarını doğru yapmış olduğunuzdan emin olun."
+
+  utter_strange_noise_ac_fix:
+  - text: "Eğer klimanızda anormal sesler duyuyorsanız, cihazı kapatın ve hemen teknik servise başvurun. Bu tür sesler sorunun belirtisi olabilir."
+
+  utter_ac_leaking_water_fix:
+  - text: "Eğer klimanız su sızdırıyorsa, su tahliye hortumunu kontrol edin ve tıkanıklık varsa temizleyin. Eğer sorun devam ederse teknik destek alabilirsiniz."
+
+  utter_choosing_ac_tips:
+  - text: "Yeni bir klima seçerken odanın büyüklüğünü, enerji verimliliğini, ve istenilen özellikleri göz önünde bulundurun. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_fridge_not_cooling_fix:
+  - text: "Eğer buzdolabınız soğutmuyorsa, termostat ayarlarını kontrol edin ve gerekirse temizlik yapın. Ayrıca, kapı contalarını kontrol etmeyi unutmayın."
+
+  utter_freezer_issue_fix:
+  - text: "Dondurucunuz sorun yaşıyorsa, içerisindeki yiyecekleri düzenleyin ve donma kontrol ayarlarını gözden geçirin. Sorun devam ederse teknik servise başvurabilirsiniz."
+
+  utter_strange_noise_fridge_fix:
+  - text: "Eğer buzdolabınızda anormal sesler duyuyorsanız, cihazın altındaki fan ve kompresörü kontrol edin. Ses devam ederse teknik destek almanız önemlidir."
+
+  utter_water_leak_fridge_fix:
+  - text: "Eğer buzdolabınızdan su sızıyorsa, su tahliye hortumunu kontrol edin ve gerekirse temizleyin. Eğer sorun devam ederse teknik servise başvurabilirsiniz."
+
+  utter_choosing_fridge_tips:
+  - text: "Yeni bir buzdolabı seçerken enerji verimliliği, iç hacim, ve özellikleri göz önünde bulundurun. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_stove_not_turning_on_fix:
+  - text: "Eğer ocağınız açılmıyorsa, önce gaz vanasını kontrol edin ve gerekirse teknik servisten yardım alın."
+
+  utter_uneven_flame_fix:
+  - text: "Ocakta düzensiz alev varsa, ocak üzerindeki hava girişlerini temizleyerek ve gaz basıncını kontrol ederek sorunu çözebilirsiniz."
+
+  utter_gas_smell_stove_fix:
+  - text: "Eğer ocakta gaz kokusu varsa, hemen odayı havalandırın, gaz vanasını kapatın ve uzak durun. Derhal gaz servisi ile iletişime geçin."
+
+  utter_stove_cleaning_tips:
+  - text: "Ocak temizliği için özellikle ocak yüzeyi ve ocak başlıklarını düzenli aralıklarla temizlemek önemlidir. Sıcak su ve sabun kullanabilir veya ocak temizleyici ürünlerden faydalanabilirsiniz."
+
+  utter_choosing_stove_tips:
+  - text: "Yeni bir ocak seçerken enerji verimliliği, ocak sayısı, marka ve model gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_hood_not_working_fix:
+  - text: "Eğer davlumbazınız çalışmıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_noisy_hood_fix:
+  - text: "Davlumbazınızda gürültü varsa, kanatları ve motoru kontrol edin. Gerekirse temizleyin ve yağlayın. Sorun devam ederse teknik destek alabilirsiniz."
+
+  utter_hood_cleaning_tips:
+  - text: "Davlumbaz temizliği için filtreleri düzenli aralıklarla temizleyin ve değiştirin. Ayrıca, davlumbazın dış yüzeyini yumuşak bir bezle temizleyebilirsiniz."
+
+  utter_choosing_hood_tips:
+  - text: "Yeni bir davlumbaz seçerken hava çekim kapasitesi, gürültü seviyesi, ve enerji verimliliği gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_oven_not_heating_fix:
+  - text: "Eğer fırınınız ısınmıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_uneven_baking_fix:
+  - text: "Fırında eşit pişirme sorunu yaşıyorsanız, fırın içindeki rafları düzenleyin ve yemekleri doğru konumda yerleştirin. Ayrıca, fırın sıcaklığını kontrol edin."
+
+  utter_burnt_food_oven_fix:
+  - text: "Eğer fırında yanık koku varsa, hemen fırını kapatın ve içindeki yemekleri çıkarın. Fırını soğuyana kadar bekleyin, ardından temizleyin ve kontrol edin."
+
+  utter_oven_cleaning_tips:
+  - text: "Fırın temizliği için içindeki kalıntıları düzenli olarak temizleyin. Sirke ve karbonat karışımı gibi doğal temizlik malzemelerini kullanabilirsiniz."
+
+  utter_choosing_oven_tips:
+  - text: "Yeni bir fırın seçerken kullanım kapasitesi, enerji verimliliği, ve fırın türü gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_dishwasher_not_starting_fix:
+  - text: "Eğer bulaşık makineniz başlamıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_dirty_dishes_dishwasher_fix:
+  - text: "Bulaşık makineniz bulaşıkları yeterince temizlemiyorsa, filtreleri kontrol edin ve gerekirse temizleyin. Ayrıca, doğru bulaşık deterjanını kullanmaya dikkat edin."
+
+  utter_water_leakage_dishwasher_fix:
+  - text: "Eğer bulaşık makineniz su sızdırıyorsa, derhal fişi çekin ve servis ile iletişime geçin. Su sızıntısı ciddi bir sorundur."
+
+  utter_dishwasher_cleaning_tips:
+  - text: "Bulaşık makinesi temizliği için düzenli aralıklarla içini temizleyin. Makinenin kapısını açık bırakarak kurumasına izin verin. Ayrıca, temizlik tabletleri kullanabilirsiniz."
+
+  utter_choosing_dishwasher_tips:
+  - text: "Yeni bir bulaşık makinesi seçerken enerji verimliliği, kapasite, ve sessiz çalışma gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_washing_machine_not_starting_fix:
+  - text: "Eğer çamaşır makineniz başlamıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_not_draining_water_washing_machine_fix:
+  - text: "Çamaşır makineniz su boşaltmıyorsa, filtreleri ve su tahliye hortumunu kontrol edin. Gerekirse temizleyin veya değiştirin."
+
+  utter_shaking_vibrating_washing_machine_fix:
+  - text: "Eğer çamaşır makineniz sallanıyorsa, makinenin dengesini kontrol edin ve yükü eşit bir şekilde dağıttığınızdan emin olun. Gerekirse ayakları ayarlayın."
+
+  utter_washing_machine_cleaning_tips:
+  - text: "Çamaşır makinesi temizliği için düzenli aralıklarla içini temizleyin. Sirke veya özel temizlik tabletleri kullanabilirsiniz."
+
+  utter_choosing_washing_machine_tips:
+  - text: "Yeni bir çamaşır makinesi seçerken yıkama kapasitesi, enerji verimliliği, ve özellikler gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_dryer_not_starting_fix:
+  - text: "Eğer kurutma makineniz başlamıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_not_drying_clothes_dryer_fix:
+  - text: "Kurutma makineniz kıyafetleri yeterince kurutmuyorsa, filtreleri ve hava tahliye hortumunu kontrol edin. Gerekirse temizleyin veya değiştirin."
+
+  utter_overheating_dryer_fix:
+  - text: "Eğer kurutma makineniz aşırı ısınıyorsa, hava tahliye yolunu kontrol edin ve filtreleri temizleyin. Gerekirse cihazın soğumasını bekleyin."
+
+  utter_dryer_cleaning_tips:
+  - text: "Kurutma makinesi temizliği için düzenli aralıklarla içini ve filtreleri temizleyin. Ayrıca, kurutma makinesi temizleyici ürünler kullanabilirsiniz."
+
+  utter_choosing_dryer_tips:
+  - text: "Yeni bir kurutma makinesi seçerken kapasite, enerji verimliliği, ve özellikler gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_microwave_not_working_fix:
+  - text: "Eğer mikrodalga fırınız çalışmıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_uneven_cooking_microwave_fix:
+  - text: "Mikrodalga fırınınız eşit pişirmiyorsa, yemekleri düzenli bir şekilde yerleştirin ve fırın içindeki dönüş platosunu kontrol edin. Ayrıca, fırın içini temizleyin."
+
+  utter_strange_noise_microwave_fix:
+  - text: "Eğer mikrodalga fırında garip sesler duyuyorsanız, cihazın içinde yabancı cisim olup olmadığını kontrol edin. Gerekirse teknik destek alın."
+
+  utter_microwave_cleaning_tips:
+  - text: "Mikrodalga fırın temizliği için içini düzenli aralıklarla temizleyin. Sirke ve su karışımını kullanarak içindeki lekeleri çıkarabilirsiniz."
+
+  utter_choosing_microwave_tips:
+  - text: "Yeni bir mikrodalga fırın seçerken hacim, güç, ve özellikler gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
+
+  utter_airfryer_not_powering_on_fix:
+  - text: "Eğer air fryer çalışmıyorsa, önce fişi ve prizi kontrol edin. Sorun devam ederse teknik servisten yardım almanızı öneririm."
+
+  utter_uneven_cooking_airfryer_fix:
+  - text: "Air fryer eşit pişirmiyorsa, yiyecekleri düzenli bir şekilde yerleştirin ve sepetin içindeki malzemeleri karıştırarak pişirin. Ayrıca, cihazın içini temizleyin."
+
+  utter_strange_noise_airfryer_fix:
+  - text: "Eğer air fryer'da garip sesler duyuyorsanız, cihazın içinde yabancı cisim olup olmadığını kontrol edin. Gerekirse teknik destek alın."
+
+  utter_airfryer_cleaning_tips:
+  - text: "Air fryer temizliği için düzenli aralıklarla içini temizleyin. Sirke ve su karışımını kullanarak içindeki lekeleri çıkarabilirsiniz."
+
+  utter_choosing_airfryer_tips:
+  - text: "Yeni bir air fryer seçerken kapasite, güç, ve özellikler gibi faktörlere dikkat edin. Ünlü markaları ve müşteri yorumlarını inceleyerek karar verebilirsiniz."
 
 session_config:
   session_expiration_time: 60
