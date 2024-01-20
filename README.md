@@ -18,7 +18,6 @@ The project requires the following software and libraries to run:
 Follow these steps to launch the project:
 
 1. Navigate to the project directory:
-
 cd my_chatbot_project
 
 2. Run the Rasa training command:
