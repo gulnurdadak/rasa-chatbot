@@ -84,6 +84,7 @@ intents:
   - airfryer_cleaning_tips
   - choosing_airfryer
   - pilav_yapimi
+  - siyasi
 
 responses:
   utter_greet:
@@ -333,6 +334,9 @@ responses:
   utter_pilav_yapimi:
   - text: "önce iki su bardağı pirinci yıka, sonra bir tencerenin içinde tereyağı ile birlikte yıkanmış pirinci kavur. Rengi sarılaşınca 3 bardak soğuk suyu koy ve tuzunu at. Suyunu çekene kadar kısık ateşte pişir. Mis gibi hazır. Afiyet olsun."
   
+  utter_siyasi:
+  - text: "Siyaset Yapamam :("
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

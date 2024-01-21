@@ -674,3 +674,12 @@ nlu:
     - pilav nasıl yapılır
     - pilava bayılırım
     - sevmek eşittir pilav
+
+- intent: siyasi
+  examples: |
+    - chp
+    - akp
+    - mhp
+    - KGT
+    - Hangi parti kazanır
+    - siyaset
