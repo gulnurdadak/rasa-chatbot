@@ -677,9 +677,12 @@ nlu:
 
 - intent: siyasi
   examples: |
-    - chp
-    - akp
-    - mhp
+    - akp şunu yaptı
+    - chp şunu yapamıyor
+    - mhp şöyle dedi
+    - akp nerede kuruldu
+    - mhp lideri kim
     - KGT
+    - akp seçim sonuçları
     - Hangi parti kazanır
     - siyaset

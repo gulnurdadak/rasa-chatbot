@@ -39,3 +39,15 @@ If you would like to contribute to this project, please open a pull request. You
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## General overview of libraries:
+
+--TensorFlow: An open-source library used for developing artificial intelligence and machine learning applications.
+
+--Rasa-sdk: The Python Software Development Kit (SDK) for the Rasa Chatbot Framework, supporting artificial intelligence applications such as natural language processing and speech understanding.
+
+--scikit-learn: A library providing a comprehensive set of machine learning tools.
+
+SQLAlchemy: A library used for SQL-based database interaction.
+
+sanic: An asynchronous web framework that can be utilized in web applications.
